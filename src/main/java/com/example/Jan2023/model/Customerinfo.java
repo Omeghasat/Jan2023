@@ -2,9 +2,11 @@ package com.example.Jan2023.model;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.sql.init.dependency.DependsOnDatabaseInitialization;
-import org.springframework.data.annotation.Id;
 
-@EntityScan
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 
 public class Customerinfo {
     @Id
